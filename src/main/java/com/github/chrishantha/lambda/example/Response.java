@@ -33,4 +33,12 @@ public class Response implements Serializable {
     public void setBody(String body) {
         this.body = body;
     }
+
+    @Override
+    public String toString() {
+        return "Response{" +
+                "headers=" + headers +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }
